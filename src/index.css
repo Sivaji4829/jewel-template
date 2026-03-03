@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Tailwind v4 Theme Variables */
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --animate-slow-pan: pan 20s linear infinite alternate;
+  
+  @keyframes pan {
+    0% { object-position: 0% 50%; }
+    100% { object-position: 100% 50%; }
+  }
+}
+
+/* Base global styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable; 
+  }
+  
+  body {
+    background-color: #FAFAFA;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
